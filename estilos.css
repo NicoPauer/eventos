@@ -1,1 +1,45 @@
+html, body
+{
+ /* Centro elementos para aprovechar la ventana */ 
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
 
+
+header
+{
+  /* Estilo de cabeceras atractivo pero que no llame la atencion */
+}
+
+footer
+{
+  /* Estilo de pie de pagina llamativo y distinto al resto pero
+     de forma coeherente con el estilo simple y moderno de la
+     pagina */
+}
+
+nav
+{
+  /* Estilo para los menus de navegacion */
+}
+
+article
+{
+  /* Estilo independiente y simple para los articulos
+}
+  
+section
+{
+  /* Estilo de las secciones sanos para la vista */
+}
+
+.eventos
+{
+  /* Clase para la vista general de eventos */
+}
+
+.evento
+{
+  /* Clase para la vista individual de evento */
+}
