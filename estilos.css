@@ -37,9 +37,13 @@ section
 .eventos
 {
   /* Clase para la vista general de eventos */
+   background-color: #1253bf;
+   color: #777777;
 }
 
 .evento
 {
   /* Clase para la vista individual de evento */
+   bacground-color: #53bf12;
+   color: #50bfbf;
 }
