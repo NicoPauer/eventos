@@ -7,6 +7,6 @@
   evento
 */  
 // EN DESARROLLO
-const general = (() => document.querySelector("#eventos-listado"));
+//const general = (() => document.querySelector("#eventos-listado"));
 
-general.setAttribute("class", "eventos");
+//general.setAttribute("class", "eventos");
