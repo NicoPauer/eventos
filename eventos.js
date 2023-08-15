@@ -33,6 +33,18 @@ class Show
 {
   constructor(que, donde)
   {
+   /* Nombre del espectaculo */ 
+      this.nombre = que;
+   /* Donde o en que plataforma o medio se realiza */ 
+      this.lugar = donde;
+    /* Quien será el mas resaltado en dicho evento si lo hubiera */
+      this.protagonista = "";
+    /* Que otros integrantes hay si los hay */
+      this.elenco = [];
+    /* En que categoría entra el evento */
+      this.rubro = "";
+    /* Fecha en la que se realizará */
+      this.fecha = new Date();
   }
 }
 
