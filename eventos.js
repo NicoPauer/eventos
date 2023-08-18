@@ -31,7 +31,7 @@ SOFTWARE.
 
 class Show
 {
-  constructor(que, donde)
+  constructor(que, donde, cuando)
   {
    /* Nombre del espectaculo */ 
       this.nombre = que;
@@ -43,8 +43,9 @@ class Show
       this.elenco = [];
     /* En que categoría entra el evento */
       this.rubro = "";
-    /* Fecha en la que se realizará */
-      this.fecha = new Date();
+    /* Fecha en la que se realizará a partir del
+       JSON pasado por el constructor cuando {"anio":entero, "mes":entero, "dia":entero}*/
+      this.fecha = new Date(cuando.anio, (cuando.mes - 1), cuando.dia);
   }
 }
 
@@ -52,7 +53,51 @@ class Cartelera
 {
   constructor(show)
   {
+   // Espectaculos a mostrar en la cartelera 
+    this.espectaculos = [];
+   // Cuales de esos se pueden ver ahora
+    this.vigentes = [];
+   // Cuales ya caducaron
+    this.caducados = [];
   }
+
+  actualizar(shows)
+  {
+    // Actualiza con un arreglo los espectaculos
+    for (let show in shows)
+    {
+     // Agrego cada show al arreglo de espectaculos si es que ya no está
+      if (! shows.includes(show))
+      {
+        this.espectaculos.append(show);    
+      }
+     // Si esta vigente lo agrego a vigentes, sino a caducados
+      if (show.fecha >= (new Date()))
+      {
+        if (! vigentes.includes(show))
+        {
+          this.vigentes.append(show);
+        }
+      }
+      else
+      {
+        if (! caducados.includes(show))
+        {
+          this.caducados.append(show);
+        }
+      }
+    }
+  }
+  
+  agregar(espectaculo)
+  {
+   // Agrega un espectaculo a los que hay disponibles si es que ya no está
+    if (! this.espectaculos.includes(espectaculo))
+    {
+      this.espectaculos.append(espectaculo);
+    }
+  }
+  
 }
 
 // Instancio las clases con objetos para usar
