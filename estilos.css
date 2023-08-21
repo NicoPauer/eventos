@@ -4,6 +4,7 @@ html, body
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  background: radial-gradient(skyblue, lightgray);
 }
 
 
@@ -17,6 +18,7 @@ footer
   /* Estilo de pie de pagina llamativo y distinto al resto pero
      de forma coeherente con el estilo simple y moderno de la
      pagina */
+  background: radial-gradient(indianred, lightgray);
 }
 
 nav
