@@ -9,6 +9,14 @@ html, body
   color: white;
 }
 
+header, footer
+{
+ /* Correción de tamaño para no usar de mas y los
+    posiciono en el centro, cuarto izquierdo en posición
+    del ancho de la pantalla */
+   width: 50%;
+   margin-left: 25%;
+}
 
 header
 {
