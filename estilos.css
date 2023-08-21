@@ -9,14 +9,14 @@ html, body
   color: white;
 }
 
-/* Agrego estilos intresantes a los enlaces */
-a
+/* Agrego estilos intresantes a los enlaces que estén dentro del nav(menu de navegación) */
+nav a
 {
   text-decoration: none;
   z-index: 0;
 }
 
-a:hover
+nav a:hover
 {
   background-color: skyblue;
   color: white;
