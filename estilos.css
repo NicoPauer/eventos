@@ -13,6 +13,7 @@ html, body
 #indice a
 {
   text-decoration: none;
+  border: 0.1em double black;
   z-index: 0;
 }
 
