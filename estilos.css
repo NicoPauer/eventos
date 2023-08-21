@@ -9,6 +9,18 @@ html, body
   color: white;
 }
 
+/* Agrego estilos intresantes a los enlaces */
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  background-color: skyblue;
+  color: white;
+}
+/* *********************************** */
 header, footer
 {
  /* Correción de tamaño para no usar de mas y los
