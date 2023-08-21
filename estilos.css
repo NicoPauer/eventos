@@ -13,12 +13,15 @@ html, body
 a
 {
   text-decoration: none;
+  z-index: 0;
 }
 
 a:hover
 {
   background-color: skyblue;
   color: white;
+  z-index: 1;
+  font-size: 1.5em;
 }
 /* *********************************** */
 header, footer
