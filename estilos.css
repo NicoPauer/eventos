@@ -74,8 +74,8 @@ section
 .eventos
 {
   /* Clase para la vista general de eventos */
-   background-color: #0077bf;
-   color: #1253bf;
+   background-color: #7777bf;
+   color: white;
 }
 
 .evento
