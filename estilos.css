@@ -15,6 +15,7 @@ header
   /* Estilo de cabeceras atractivo pero que no llame la atencion */
    background-color: lightgreen;
    color: gray;
+   padding-bottom: 0.25em;
 }
 
 footer
@@ -24,6 +25,7 @@ footer
      pagina */
   background: radial-gradient(indianred, lightgray);
   font-family: Helvetica;
+  padding: 0.15em;
 }
 
 nav
