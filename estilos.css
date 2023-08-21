@@ -24,6 +24,8 @@ header
    background-color: lightgreen;
    color: gray;
    padding-bottom: 0.25em;
+ /* Redondeo bordes superiores izquierdo y derecho */
+   border-radius: 2em 2em 0 0;
 }
 
 footer
@@ -34,6 +36,8 @@ footer
   background: radial-gradient(indianred, lightgray);
   font-family: Helvetica;
   padding: 0.15em;
+ /* Redondeo bordes inferiores izquierdo y derecho */
+  border-radius: 0 0 2em 2em;
 }
 
 nav
