@@ -10,13 +10,13 @@ html, body
 }
 
 /* Agrego estilos intresantes a los enlaces que estén dentro del nav(menu de navegación) */
-nav a
+#indice a
 {
   text-decoration: none;
   z-index: 0;
 }
 
-nav a:hover
+#indice a:hover
 {
   background-color: skyblue;
   color: white;
