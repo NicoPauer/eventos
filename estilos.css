@@ -3,6 +3,8 @@ html, body
  /* Centro elementos para aprovechar la ventana */ 
   margin: 0 auto;
   padding: 0;
+/* Centrado de cartelera */ 
+  padding-top: 2em;
   text-align: center;
   background: radial-gradient(skyblue, lightgray);
   font-family: Arial;
@@ -32,6 +34,9 @@ header, footer
     del ancho de la pantalla */
    width: 50%;
    margin-left: 25%;
+ /* Ajusto tamaño de texto para que no se vea muy grande ni muy pequeño en
+    distintas pantallas principalmente verticales */
+   font-size: 75%;
 }
 
 header
