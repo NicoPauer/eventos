@@ -31,27 +31,27 @@ SOFTWARE.
 
 class Show
 {
-  constructor(que, donde, cuando)
+  constructor()
   {
    /* Nombre del espectaculo */ 
-      this.nombre = que;
+      this.nombre = "";
    /* Donde o en que plataforma o medio se realiza */ 
-      this.lugar = donde;
+      this.lugar = "";
     /* Quien será el mas resaltado en dicho evento si lo hubiera */
       this.protagonista = "";
     /* Que otros integrantes hay si los hay */
       this.elenco = [];
     /* En que categoría entra el evento */
       this.rubro = "";
-    /* Fecha en la que se realizará a partir del
-       JSON pasado por el constructor cuando {"anio":entero, "mes":entero, "dia":entero}*/
-      this.fecha = new Date(cuando.anio, (cuando.mes - 1), cuando.dia);
+    /* Lo hago así para que tenga un valor inicial y
+       se sepa su tipo */
+      this.fecha = new Date();
   }
 }
 
 class Cartelera
 {
-  constructor(show)
+  constructor()
   {
    // Espectaculos a mostrar en la cartelera 
     this.espectaculos = [];
@@ -69,21 +69,21 @@ class Cartelera
      // Agrego cada show al arreglo de espectaculos si es que ya no está
       if (! shows.includes(show))
       {
-        this.espectaculos.append(show);    
+        this.espectaculos.push(show);    
       }
      // Si esta vigente lo agrego a vigentes, sino a caducados
       if (show.fecha >= (new Date()))
       {
         if (! vigentes.includes(show))
         {
-          this.vigentes.append(show);
+          this.vigentes.push(show);
         }
       }
       else
       {
         if (! caducados.includes(show))
         {
-          this.caducados.append(show);
+          this.caducados.push(show);
         }
       }
     }
@@ -94,16 +94,23 @@ class Cartelera
    // Agrega un espectaculo a los que hay disponibles si es que ya no está
     if (! this.espectaculos.includes(espectaculo))
     {
-      this.espectaculos.append(espectaculo);
+      this.espectaculos.push(espectaculo);
     }
   }
   
 }
 
 // Instancio las clases con objetos para usar
-//const show_1 = new Show("", );
-//const show_2 = new Show("", );
-//const cartelera = new Cartelera(show_1);
-//cartelera.agregar(show_2);
+const evento = new Show();
+const carteles = new Cartelera();
+// Con una instancia de la clase show iré agregando y cambiando shows a la grilla
+eveto.nombre = "Concierto Rod Stewart"
+evento.protagonista = "Rod Stewart"
+evento.rubro = "concierto";
+// fecha: 4 de octubre de 2023
+evento.fecha = new Date(2023, 9, 4);
+// Agrego a cartelera
+carteles.agregar(evento);
+// Cambio estado de objeto evento para agregar otros espectaculos
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
