@@ -11,6 +11,14 @@ html, body
   color: white;
 }
 
+#descripcion p
+{
+ /* Aumento legibilidad de parrafos en la descripcion de página
+  font-weight: 666;
+  color: #bff7ff;
+  background-color: gray;
+}
+
 /* Agrego estilos intresantes a los enlaces que estén dentro del nav(menu de navegación) */
 #indice a
 {
