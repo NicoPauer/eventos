@@ -13,7 +13,7 @@ html, body
 
 #descripcion p
 {
- /* Aumento legibilidad de parrafos en la descripcion de página
+ /* Aumento legibilidad de parrafos en la descripcion de página */
   font-weight: 666;
   color: #bff7ff;
   background-color: gray;
