@@ -104,7 +104,7 @@ class Cartelera
 const evento = new Show();
 const carteles = new Cartelera();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
-eveto.nombre = "Concierto Rod Stewart"
+evento.nombre = "Concierto Rod Stewart"
 evento.protagonista = "Rod Stewart"
 evento.rubro = "concierto";
 // fecha: 4 de octubre de 2023
