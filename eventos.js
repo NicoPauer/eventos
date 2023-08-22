@@ -106,6 +106,7 @@ const carteles = new Cartelera();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
 evento.nombre = "Concierto Rod Stewart"
 evento.protagonista = "Rod Stewart"
+evento.lugar = "Estadio GEBA, Buenos Aires(Capital)";
 evento.rubro = "concierto";
 // fecha: 4 de octubre de 2023
 evento.fecha = new Date(2023, 9, 4);
