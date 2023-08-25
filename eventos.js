@@ -68,7 +68,7 @@ const evento_swift = new Show();
 evento_swift.nombre = "Taylor Swift The Eras Tour";
 evento_swift.protagonista = "Taylor Swift";
 evento_swift.lugar = "Estadio River, Buenos Aires (Capital)";
-evento.rubro = "concierto";
+evento_swift.rubro = "concierto";
 evento_swift.fecha = new Date(2023, 10, 9);
 cartelera.push(evento_swift);
 
