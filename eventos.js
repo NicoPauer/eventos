@@ -86,5 +86,5 @@ for (let c in cartelera)
   // Selecciono sección que corresponde al rubro del cartel
   const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
-  grilla.innerHTML = grilla.innerHTML + "<p>" + (cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
+  seccion.innerHTML = seccion.innerHTML + "<p>" + (cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
