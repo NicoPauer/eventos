@@ -60,7 +60,7 @@ evento.fecha = new Date(2023, 9, 4);
 // Defino representacion de cartelera
 cartelera = []
 // Agrego a cartelera
- cartelera.append(evento)
+ cartelera.push(evento)
 // Cambio estado de objeto evento para agregar otros espectaculos
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
