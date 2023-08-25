@@ -96,3 +96,4 @@ carteles.agregar(evento);
 // Cambio estado de objeto evento para agregar otros espectaculos
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
+grilla.append('<p>' + evento.nombre + '<span class = "fecha">'+ evento.fecha + '</span></p>')
