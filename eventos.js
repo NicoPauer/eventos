@@ -73,8 +73,10 @@ cartelera.push(evento);
 
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
-for (let cartel in cartelera)
+for (let c in cartelera)
 {
+  // c es uno de los indices de cartelera, uso indexación para obtener el elemento
+  const cartel = cartelera[c];
  // Muestro cada uno de los eventos 
   grilla.append(cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + cartel.fecha + " en " + cartel.lugar + ".");
 }
