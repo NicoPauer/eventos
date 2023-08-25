@@ -74,19 +74,9 @@ class Cartelera
      // Si esta vigente lo agrego a vigentes, sino a caducados
       if (show.fecha >= (new Date()))
       {
-        if (! vigentes.includes(show))
-        {
-          this.vigentes.push(show);
-        }
+       // Pruebo hacer mas visual el método para no lidear con cosas indefinidas 
+        alert('Fecha: ' + show.fecha + ', Se presenta: ' + show.protagonista + ', "' + show.nombre + '" en ' + show.lugar + '.');
       }
-      else
-      {
-        if (! caducados.includes(show))
-        {
-          this.caducados.push(show);
-        }
-      }
-    }
   }
   
   agregar(espectaculo)
