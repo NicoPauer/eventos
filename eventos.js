@@ -83,6 +83,8 @@ for (let c in cartelera)
 {
   // c es uno de los indices de cartelera, uso indexación para obtener el elemento
   cartel = cartelera[c];
+  // Selecciono sección que corresponde al rubro del cartel
+  const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
   grilla.innerHTML = grilla.innerHTML + "<p>" + (cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
