@@ -62,8 +62,8 @@ footer
   /* Estilo de pie de pagina llamativo y distinto al resto pero
      de forma coeherente con el estilo simple y moderno de la
      pagina */
-  background: radial-gradient(indianred, lightgray);
-  font-family: Helvetica;
+  background: radial-gradient(lightgray, indianred);
+  font-family: Helvetica, sans-serif;
   padding: 0.15em;
  /* Redondeo bordes inferiores izquierdo y derecho */
   border-radius: 0 0 2em 2em;
