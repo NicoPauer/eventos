@@ -4,7 +4,7 @@ html, body
   margin: 0 auto;
   padding: 0;
 /* Centrado de cartelera */ 
-  padding-top: 2em;
+  padding-top: 4em;
   text-align: center;
   background: radial-gradient(skyblue, lightgray);
   font-family: Arial;
