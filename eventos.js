@@ -51,17 +51,30 @@ class Show
 // Instancio las clases con objetos para usar
 const evento = new Show();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
-evento.nombre = "Concierto Rod Stewart"
+evento.nombre = "Rod Stewart En Vivo"
 evento.protagonista = "Rod Stewart"
-evento.lugar = "Estadio GEBA, Buenos Aires(Capital)";
+evento.lugar = "Estadio GEBA, Buenos Aires (Capital)";
 evento.rubro = "concierto";
 // fecha: 4 de octubre de 2023
 evento.fecha = new Date(2023, 9, 4);
 // Defino representacion de cartelera
 cartelera = []
 // Agrego a cartelera
- cartelera.push(evento)
+cartelera.push(evento)
 // Cambio estado de objeto evento para agregar otros espectaculos
+
+// Taylor Swift 2023
+evento.nombre = "Taylor Swift The Eras Tour";
+evento.protagonista = "Taylor Swift";
+evento.lugar = "Estadio River, Buenos Aires (Capital)";
+evento.rubro = "concierto";
+evento.fecha = new Date(2023, 10, 9);
+cartelera.push(evento);
+
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
-grilla.append(cartelera[0].rubro + " " + cartelera[0].nombre + " por " + cartelera[0].protagonista + " el " + evento.fecha + " en " + cartelera[0].lugar + ".");
+for (let cartel in cartelera)
+{
+ // Muestro cada uno de los eventos 
+  grilla.append(cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + cartel.fecha + " en " + cartel.lugar + ".");
+}
