@@ -77,6 +77,7 @@ class Cartelera
        // Pruebo hacer mas visual el método para no lidear con cosas indefinidas 
         alert('Fecha: ' + show.fecha + ', Se presenta: ' + show.protagonista + ', "' + show.nombre + '" en ' + show.lugar + '.');
       }
+    }
   }
   
   agregar(espectaculo)
