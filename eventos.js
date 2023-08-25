@@ -48,28 +48,29 @@ class Show
       this.fecha = new Date();
   }
 }
-// Instancio las clases con objetos para usar
-const evento = new Show();
+// Instancio la clase con objetos para usar
+const evento_1 = new Show();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
-evento.nombre = "Rod Stewart En Vivo"
-evento.protagonista = "Rod Stewart"
-evento.lugar = "Estadio GEBA, Buenos Aires (Capital)";
-evento.rubro = "concierto";
+evento_1.nombre = "Rod Stewart En Vivo"
+evento_1.protagonista = "Rod Stewart"
+evento_1.lugar = "Estadio GEBA, Buenos Aires (Capital)";
+evento_1.rubro = "concierto";
 // fecha: 4 de octubre de 2023
-evento.fecha = new Date(2023, 9, 4);
+evento_1.fecha = new Date(2023, 9, 4);
 // Defino representacion de cartelera
-let cartelera = []
+let cartelera = [];
 // Agrego a cartelera
-cartelera.push(evento)
-// Cambio estado de objeto evento para agregar otros espectaculos
+cartelera.push(evento_1)
+// Hago otras instancias de las clases para tener mejor encapsulamiento y no sobreescribir información
 
 // Taylor Swift 2023
-evento.nombre = "Taylor Swift The Eras Tour";
-evento.protagonista = "Taylor Swift";
-evento.lugar = "Estadio River, Buenos Aires (Capital)";
+const evento_swift = new Show();
+evento_swift.nombre = "Taylor Swift The Eras Tour";
+evento_swift.protagonista = "Taylor Swift";
+evento_swift.lugar = "Estadio River, Buenos Aires (Capital)";
 evento.rubro = "concierto";
-evento.fecha = new Date(2023, 10, 9);
-cartelera.push(evento);
+evento_swift.fecha = new Date(2023, 10, 9);
+cartelera.push(evento_swift);
 
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
