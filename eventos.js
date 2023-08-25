@@ -48,42 +48,8 @@ class Show
       this.fecha = new Date();
   }
 }
-
-class Cartelera
-{
-  constructor()
-  {
-   // Espectaculos a mostrar en la cartelera 
-    this.espectaculos = [];
-   // Cuales de esos se pueden ver ahora
-    this.vigentes = [];
-   // Cuales ya caducaron
-    this.caducados = [];
-  }
-
-  actualizar(shows)
-  {
-    // Actualiza con un arreglo los espectaculos
-    for (let show in shows)
-    {
-      alert('Fecha: ' + show.fecha + ', Se presenta: ' + show.protagonista + ', "' + show.nombre + '" en ' + show.lugar + '.');
-    }
-  }
-  
-  agregar(espectaculo)
-  {
-   // Agrega un espectaculo a los que hay disponibles si es que ya no está
-    if (! this.espectaculos.includes(espectaculo))
-    {
-      this.espectaculos.push(espectaculo);
-    }
-  }
-  
-}
-
 // Instancio las clases con objetos para usar
 const evento = new Show();
-const carteles = new Cartelera();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
 evento.nombre = "Concierto Rod Stewart"
 evento.protagonista = "Rod Stewart"
@@ -91,9 +57,11 @@ evento.lugar = "Estadio GEBA, Buenos Aires(Capital)";
 evento.rubro = "concierto";
 // fecha: 4 de octubre de 2023
 evento.fecha = new Date(2023, 9, 4);
+// Defino representacion de cartelera
+cartelera = []
 // Agrego a cartelera
-carteles.agregar(evento);
+ cartelera.append(evento)
 // Cambio estado de objeto evento para agregar otros espectaculos
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
-grilla.append('<p>' + evento.nombre + '<span class = "fecha">'+ evento.fecha + '</span></p>')
+grilla.append(cartelera[0].rubro + " " + cartelera[0].nombre + " por " + cartelera[0].protagonista " el "+ evento.fecha + " en " + cartelera[0].lugar + ".");
