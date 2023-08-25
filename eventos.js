@@ -58,7 +58,7 @@ evento.rubro = "concierto";
 // fecha: 4 de octubre de 2023
 evento.fecha = new Date(2023, 9, 4);
 // Defino representacion de cartelera
-cartelera = []
+let cartelera = []
 // Agrego a cartelera
 cartelera.push(evento)
 // Cambio estado de objeto evento para agregar otros espectaculos
