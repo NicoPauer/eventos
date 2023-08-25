@@ -80,5 +80,5 @@ for (let c in cartelera)
   // c es uno de los indices de cartelera, uso indexación para obtener el elemento
   const cartel = cartelera[c];
  // Muestro cada uno de los eventos 
-  grilla.append(cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + cartel.fecha.getDate() + "/" meses[cartel.fecha.getMonth()] + "/" + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".");
+  grilla.append(cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + cartel.fecha.getDate() + "/" + meses[cartel.fecha.getMonth()] + "/" + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".");
 }
