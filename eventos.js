@@ -66,17 +66,7 @@ class Cartelera
     // Actualiza con un arreglo los espectaculos
     for (let show in shows)
     {
-     // Agrego cada show al arreglo de espectaculos si es que ya no está
-      if (! shows.includes(show))
-      {
-        this.espectaculos.push(show);    
-      }
-     // Si esta vigente lo agrego a vigentes, sino a caducados
-      if (show.fecha >= (new Date()))
-      {
-       // Pruebo hacer mas visual el método para no lidear con cosas indefinidas 
-        alert('Fecha: ' + show.fecha + ', Se presenta: ' + show.protagonista + ', "' + show.nombre + '" en ' + show.lugar + '.');
-      }
+      alert('Fecha: ' + show.fecha + ', Se presenta: ' + show.protagonista + ', "' + show.nombre + '" en ' + show.lugar + '.');
     }
   }
   
