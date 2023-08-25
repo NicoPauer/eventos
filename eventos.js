@@ -54,7 +54,7 @@ const evento_1 = new Show();
 evento_1.nombre = "Rod Stewart En Vivo"
 evento_1.protagonista = "Rod Stewart"
 evento_1.lugar = "Estadio GEBA, Buenos Aires (Capital)";
-evento_1.rubro = "concierto";
+evento_1.rubro = "conciertos";
 // fecha: 4 de octubre de 2023
 evento_1.fecha = new Date(2023, 9, 4);
 // Defino representacion de cartelera
@@ -68,7 +68,7 @@ const evento_swift = new Show();
 evento_swift.nombre = "Taylor Swift The Eras Tour";
 evento_swift.protagonista = "Taylor Swift";
 evento_swift.lugar = "Estadio River, Buenos Aires (Capital)";
-evento_swift.rubro = "concierto";
+evento_swift.rubro = "conciertos";
 evento_swift.fecha = new Date(2023, 10, 9);
 cartelera.push(evento_swift);
 
