@@ -64,4 +64,4 @@ cartelera = []
 // Cambio estado de objeto evento para agregar otros espectaculos
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
-grilla.append(cartelera[0].rubro + " " + cartelera[0].nombre + " por " + cartelera[0].protagonista " el "+ evento.fecha + " en " + cartelera[0].lugar + ".");
+grilla.append(cartelera[0].rubro + " " + cartelera[0].nombre + " por " + cartelera[0].protagonista + " el " + evento.fecha + " en " + cartelera[0].lugar + ".");
