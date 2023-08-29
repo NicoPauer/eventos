@@ -63,14 +63,14 @@ let cartelera = [];
 cartelera.push(evento_1)
 // Hago otras instancias de las clases para tener mejor encapsulamiento y no sobreescribir información
 
-// Taylor Swift 2023
-const evento_swift = new Show();
-evento_swift.nombre = "Taylor Swift The Eras Tour";
-evento_swift.protagonista = "Taylor Swift";
-evento_swift.lugar = "Estadio River, Buenos Aires (Capital)";
-evento_swift.rubro = "conciertos";
-evento_swift.fecha = new Date(2023, 10, 9);
-cartelera.push(evento_swift);
+// Otros eventos
+const evento_2 = new Show();
+evento_2.nombre = "Taylor Swift The Eras Tour";
+evento_2.protagonista = "Taylor Swift";
+evento_2.lugar = "Estadio River, Buenos Aires (Capital)";
+evento_2.rubro = "conciertos";
+evento_2.fecha = new Date(2023, 10, 9);
+cartelera.push(evento_2);
 
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
@@ -86,5 +86,5 @@ for (let c in cartelera)
   // Selecciono sección que corresponde al rubro del cartel
   const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
-  seccion.innerHTML = seccion.innerHTML + "<p>" + (cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
+  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
