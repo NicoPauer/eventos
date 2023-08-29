@@ -77,9 +77,10 @@ nav
 
 .eventos
 {
-  /* Clase para la vista general de eventos */
+  /* Clase para la vista general de contenedores de eventos */
    background-color: #7777bf;
    color: white;
+   padding: 1em;
 }
 
 .evento
