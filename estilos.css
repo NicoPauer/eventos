@@ -75,16 +75,6 @@ nav
    text-decoration: none;
 }
 
-article
-{
-  /* Estilo independiente y simple para los articulos  */
-}
-  
-section
-{
-  /* Estilo de las secciones sanos para la vista */
-}
-
 .eventos
 {
   /* Clase para la vista general de eventos */
@@ -97,4 +87,14 @@ section
   /* Clase para la vista individual de evento */
    background-color: #53bf12;
    color: #50bfbf;
+ /* Defino propiedades del borde inspirandome en estampado escoces de mi pantalon */
+   border: 0.2em solid white;
+   outline: 0.3em solid black;
+   border-radius: 0.4em;
+ /* Defino tamaño del contenedor */
+   width: 50%;
+ /* Defino espaciado entre elementos externos e internos para
+    aumentar legibilidad */
+   margin-left: 25%;
+   padding: 0.4em;
 }
