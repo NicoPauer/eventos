@@ -85,8 +85,8 @@ nav
 .evento
 {
   /* Clase para la vista individual de evento */
-   background-color: #53bf12;
-   color: #50bfbf;
+   background-color: #1253bf;
+   color: white;
  /* Defino propiedades del borde inspirandome en estampado escoces de mi pantalon */
    border: 0.2em solid white;
    outline: 0.3em solid black;
