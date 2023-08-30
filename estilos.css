@@ -99,3 +99,13 @@ nav
    margin-left: 25%;
    padding: 0.4em;
 }
+
+.evento:hover
+{
+ /* Aplico estilos cuando el usuario apunta
+    con el cursor */
+  transform: scale(160%);
+  background-color: black;
+  color: wheat;
+  transition: 1.5s transform ease-out;
+}
