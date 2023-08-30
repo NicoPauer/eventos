@@ -85,6 +85,7 @@ evento_4.nombre = "Bailando por unsueño 2023";
 evento_4.protagonista = "Marcelo Tinelli, Angel De Brito, Pampita y gran elenco";
 evento_4.lugar = "Canal de televisión America TV";
 evento_4.fecha = new Date(2023, 8, 04);
+evento_4.rubro = "television";
 cartelera.push(evento_4)
 
 // Selecciono elementos de la interfaz
