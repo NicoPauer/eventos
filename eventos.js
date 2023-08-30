@@ -81,7 +81,7 @@ evento_3.fecha = new Date(2023, 8, 18);
 cartelera.push(evento_3);
 
 const evento_4 = new Show();
-evento_4.nombre = "Bailando por unsueño 2023";
+evento_4.nombre = "Bailando por un sueño 2023";
 evento_4.protagonista = "Marcelo Tinelli, Angel De Brito, Pampita y gran elenco";
 evento_4.lugar = "Canal de televisión America TV";
 evento_4.fecha = new Date(2023, 8, 04);
