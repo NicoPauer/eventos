@@ -72,6 +72,14 @@ evento_2.rubro = "conciertos";
 evento_2.fecha = new Date(2023, 10, 9);
 cartelera.push(evento_2);
 
+const evento_3 = new Show();
+evento_3.nombre = "Vivo de Instagram sobre autismo Ian Moche con Flor Alifano";
+evento_3.protagonista = "Ian Moche";
+evento_3.lugar = "Instagram @ianmoche a las 18:00hs";
+evento_3.rubro = "charlas";
+evento_3.fecha = new Date(2023, 8, 18);
+cartelera.push(evento_3);
+
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
 // Diccionario con los meses de formato javascript a gregoriano
@@ -86,5 +94,5 @@ for (let c in cartelera)
   // Selecciono sección que corresponde al rubro del cartel
   const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
-  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.rubro + " " + cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
+  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
