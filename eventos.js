@@ -56,7 +56,7 @@ evento_1.protagonista = "Rod Stewart"
 evento_1.lugar = "Estadio GEBA, Buenos Aires (Capital)";
 evento_1.rubro = "conciertos";
 // fecha: 4 de octubre de 2023
-evento_1.fecha = new Date(2023, 9, 4);
+evento_1.fecha = new Date(2023, 9, 04);
 // Defino representacion de cartelera
 let cartelera = [];
 // Agrego a cartelera
@@ -69,7 +69,7 @@ evento_2.nombre = "Taylor Swift The Eras Tour";
 evento_2.protagonista = "Taylor Swift";
 evento_2.lugar = "Estadio River, Buenos Aires (Capital)";
 evento_2.rubro = "conciertos";
-evento_2.fecha = new Date(2023, 10, 9);
+evento_2.fecha = new Date(2023, 10, 09);
 cartelera.push(evento_2);
 
 const evento_3 = new Show();
@@ -79,6 +79,13 @@ evento_3.lugar = "Instagram @ianmoche a las 18:00hs";
 evento_3.rubro = "charlas";
 evento_3.fecha = new Date(2023, 8, 18);
 cartelera.push(evento_3);
+
+const evento_4 = new Show();
+evento_4.nombre = "Bailando por unsueño 2023";
+evento_4.protagonista = "Marcelo Tinelli, Angel De Brito, Pampita y gran elenco";
+evento_4.lugar = "Canal de televisión America TV";
+evento_4.fecha = new Date(2023, 8, 04);
+cartelera.push(evento_4)
 
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
