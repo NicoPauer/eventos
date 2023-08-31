@@ -106,7 +106,7 @@ evento_6.rubro = "teatro";
 cartelera.push(evento_6);
 // evento_7
 const evento_7 = new Show();
-evento_7.nombre = "Terapia, comedía en tres sesiones y un diagnostico"
+evento_7.nombre = "Terapia, comedía en tres sesiones y un diagnostico";
 evento_7.lugar = "Tetro municipal Bahía Blanca, Sala Escenario";
 evento_7.fecha = new Date(2023, 8, 8);
 evento_7.rubro = "teatro";
@@ -135,5 +135,5 @@ for (let c in cartelera)
   // Selecciono sección que corresponde al rubro del cartel
   const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
-  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + " por " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
+  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + ", " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
