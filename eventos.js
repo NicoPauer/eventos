@@ -100,14 +100,14 @@ cartelera.push(evento_5);
 // evento_6
 const evento_6 = new Show();
 evento_6.nombre = "CONCIERTO DE ORQUESTAS ESCUELAS";
-evento_6.lugar = "Tetro municipal Bahía Blanca, Sala Mayor";
+evento_6.lugar = "Teatro municipal Bahía Blanca, Sala Mayor";
 evento_6.fecha = new Date(2023, 8, 6);
 evento_6.rubro = "teatro";
 cartelera.push(evento_6);
 // evento_7
 const evento_7 = new Show();
 evento_7.nombre = "Terapia, comedía en tres sesiones y un diagnostico";
-evento_7.lugar = "Tetro municipal Bahía Blanca, Sala Escenario";
+evento_7.lugar = "Teatro municipal Bahía Blanca, Sala Escenario";
 evento_7.fecha = new Date(2023, 8, 8);
 evento_7.rubro = "teatro";
 cartelera.push(evento_7);
