@@ -93,7 +93,7 @@ cartelera.push(evento_4);
 const evento_5 = new Show();
 evento_5.nombre = "Debate presidencial Argentina";
 evento_5.protagonista = "Candidatos a presidentes";
-evento_5.lugar = "Canales de televisión TN y Trece TV desde la Universidad Nacional de Santiago del Estero a las 21:30hs."
+evento_5.lugar = "Canales de televisión TN y Trece TV desde la Universidad Nacional de Santiago del Estero a las 21:30hs";
 evento_5.rubro = "television";
 evento_5.fecha = new Date(2023, 9, 01);
 cartelera.push(evento_5);
@@ -118,7 +118,12 @@ evento_8.rubro = "teatro";
 const evento_9 = new Show();
 // evento_10
 const evento_10 = new Show(); 
-
+evento_10.nombre = "Inter Miami vs. LAFC";
+evento_10.lugar = "TyCsports desde estadio Banc of California Stadium(BMO) a las 23:00hs";
+evento_10.protagonista = "Messi";
+evento_10.rubro = "deportes";
+evento_10.fecha = new Date(2023, 8, 3);
+cartelera.push(evento_10);
 
 // Renderizado de los shows a mostrar en cartelera
 // Selecciono elementos de la interfaz
