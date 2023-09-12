@@ -82,13 +82,13 @@ evento_3.rubro = "charlas";
 evento_3.fecha = new Date(2023, 8, 18);
 cartelera.push(evento_3);
 // evento_4
-const evento_4 = new Show();
+/*const evento_4 = new Show();
 evento_4.nombre = "Bailando por un sueño 2023";
 evento_4.protagonista = "Marcelo Tinelli, Angel De Brito, Pampita y gran elenco";
 evento_4.lugar = "Canal de televisión America TV";
 evento_4.fecha = new Date(2023, 8, 04);
 evento_4.rubro = "television";
-cartelera.push(evento_4);
+cartelera.push(evento_4);*/
 // evento_5
 const evento_5 = new Show();
 evento_5.nombre = "Debate presidencial Argentina";
@@ -98,7 +98,7 @@ evento_5.rubro = "television";
 evento_5.fecha = new Date(2023, 9, 01);
 cartelera.push(evento_5);
 // evento_6
-const evento_6 = new Show();
+/*const evento_6 = new Show();
 evento_6.nombre = "CONCIERTO DE ORQUESTAS ESCUELAS";
 evento_6.lugar = "Teatro municipal Bahía Blanca, Sala Mayor";
 evento_6.fecha = new Date(2023, 8, 6);
@@ -123,7 +123,7 @@ evento_10.lugar = "TyCsports desde estadio Banc of California Stadium(BMO) a las
 evento_10.protagonista = "Messi";
 evento_10.rubro = "deportes";
 evento_10.fecha = new Date(2023, 8, 3);
-cartelera.push(evento_10);
+cartelera.push(evento_10);*/
 
 // Renderizado de los shows a mostrar en cartelera
 // Selecciono elementos de la interfaz
