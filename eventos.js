@@ -132,7 +132,7 @@ evento_11.nombre = "Supuestamente fin de bailando 2023";
 
 evento_11.lugar = "America TV";
 
-evento_11.fecha = new Date(2024, 1, 29);
+evento_11.fecha = new Date(2024, 0, 29);
 
 evento_11.rubro = "television";
 
