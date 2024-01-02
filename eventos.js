@@ -98,7 +98,7 @@ evento_5.rubro = "television";
 evento_5.fecha = new Date(2023, 9, 01);
 cartelera.push(evento_5);
 // evento_6
-/*const evento_6 = new Show();
+const evento_6 = new Show();
 evento_6.nombre = "CONCIERTO DE ORQUESTAS ESCUELAS";
 evento_6.lugar = "Teatro municipal Bahía Blanca, Sala Mayor";
 evento_6.fecha = new Date(2023, 8, 6);
@@ -123,8 +123,22 @@ evento_10.lugar = "TyCsports desde estadio Banc of California Stadium(BMO) a las
 evento_10.protagonista = "Messi";
 evento_10.rubro = "deportes";
 evento_10.fecha = new Date(2023, 8, 3);
-cartelera.push(evento_10);*/
+cartelera.push(evento_10);
+// Evento 11
 
+const evento_11 = new Show();
+
+evento_11.nombre = "Supuestamente fin de bailando 2023";
+
+evento_11.lugar = "America TV";
+
+evento_11.fecha = new Date(2024, 1, 29);
+
+evento_11.rubro = "television";
+
+evento_11.protagonista = "Tinelli, finalistas, jurado publico";
+
+cartelera.push(evento_11);
 // Renderizado de los shows a mostrar en cartelera
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
