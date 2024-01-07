@@ -52,12 +52,12 @@ class Show
 const evento_1 = new Show();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
 // evento_1
-evento_1.nombre = "Rod Stewart En Vivo"
-evento_1.protagonista = "Rod Stewart"
-evento_1.lugar = "Estadio GEBA, Buenos Aires (Capital)";
-evento_1.rubro = "conciertos";
-// fecha: 4 de octubre de 2023
-evento_1.fecha = new Date(2023, 9, 04);
+evento_1.nombre = "cumpleaños de la artista Carolina Macellaro, ig:@soyelefantevioleta"
+evento_1.protagonista = "Carolina Macellaro con nombre artístico 'Elefante Violeta'"
+evento_1.lugar = "donde quiera";
+evento_1.rubro = "cumpleaños";
+// fecha: 27 de enero de 2024
+evento_1.fecha = new Date(2024, 0, 27);
 // Defino representacion de cartelera
 let cartelera = [];
 // Agrego a cartelera
@@ -67,78 +67,34 @@ cartelera.push(evento_1)
 // Otros eventos
 // evento_2
 const evento_2 = new Show();
-evento_2.nombre = "Taylor Swift The Eras Tour";
-evento_2.protagonista = "Taylor Swift";
-evento_2.lugar = "Estadio River, Buenos Aires (Capital)";
-evento_2.rubro = "conciertos";
-evento_2.fecha = new Date(2023, 10, 09);
+evento_2.nombre = "Cumpleaños de mi abuela, Alicia Guillén";
+evento_2.protagonista = "Mi abuela";
+evento_2.lugar = "Monte Hermoso";
+evento_2.rubro = "cumpleaños";
+evento_2.fecha = new Date(2024, 0, 28);
 cartelera.push(evento_2);
 // evento_3
 const evento_3 = new Show();
-evento_3.nombre = "Vivo de Instagram sobre autismo Ian Moche con Flor Alifano";
-evento_3.protagonista = "Ian Moche";
-evento_3.lugar = "Instagram @ianmoche a las 18:00hs";
-evento_3.rubro = "charlas";
-evento_3.fecha = new Date(2023, 8, 18);
+evento_3.nombre = "Mi cumpleaños, Nico Paier";
+evento_3.protagonista = "yo";
+evento_3.lugar = "A definir";
+evento_3.rubro = "cumpleaños";
+evento_3.fecha = new Date(2024, 9, 27);
 cartelera.push(evento_3);
 // evento_4
-/*const evento_4 = new Show();
-evento_4.nombre = "Bailando por un sueño 2023";
-evento_4.protagonista = "Marcelo Tinelli, Angel De Brito, Pampita y gran elenco";
-evento_4.lugar = "Canal de televisión America TV";
-evento_4.fecha = new Date(2023, 8, 04);
+const evento_4 = new Show();
+
+evento_4.nombre = "Supuestamente fin de bailando 2023";
+
+evento_4.lugar = "America TV";
+
+evento_4.fecha = new Date(2024, 0, 29);
+
 evento_4.rubro = "television";
-cartelera.push(evento_4);*/
-// evento_5
-const evento_5 = new Show();
-evento_5.nombre = "Debate presidencial Argentina";
-evento_5.protagonista = "Candidatos a presidentes";
-evento_5.lugar = "Canales de televisión TN y Trece TV desde la Universidad Nacional de Santiago del Estero a las 21:30hs";
-evento_5.rubro = "television";
-evento_5.fecha = new Date(2023, 9, 01);
-cartelera.push(evento_5);
-// evento_6
-const evento_6 = new Show();
-evento_6.nombre = "CONCIERTO DE ORQUESTAS ESCUELAS";
-evento_6.lugar = "Teatro municipal Bahía Blanca, Sala Mayor";
-evento_6.fecha = new Date(2023, 8, 6);
-evento_6.rubro = "teatro";
-cartelera.push(evento_6);
-// evento_7
-const evento_7 = new Show();
-evento_7.nombre = "Terapia, comedía en tres sesiones y un diagnostico";
-evento_7.lugar = "Teatro municipal Bahía Blanca, Sala Escenario";
-evento_7.fecha = new Date(2023, 8, 8);
-evento_7.rubro = "teatro";
-cartelera.push(evento_7);
-// evento_8
-const evento_8 = new Show();
-evento_8.rubro = "teatro";
-// evento_9
-const evento_9 = new Show();
-// evento_10
-const evento_10 = new Show(); 
-evento_10.nombre = "Inter Miami vs. LAFC";
-evento_10.lugar = "TyCsports desde estadio Banc of California Stadium(BMO) a las 23:00hs";
-evento_10.protagonista = "Messi";
-evento_10.rubro = "deportes";
-evento_10.fecha = new Date(2023, 8, 3);
-cartelera.push(evento_10);
-// Evento 11
 
-const evento_11 = new Show();
+evento_4.protagonista = "Tinelli, finalistas, jurado publico";
 
-evento_11.nombre = "Supuestamente fin de bailando 2023";
-
-evento_11.lugar = "America TV";
-
-evento_11.fecha = new Date(2024, 0, 29);
-
-evento_11.rubro = "television";
-
-evento_11.protagonista = "Tinelli, finalistas, jurado publico";
-
-cartelera.push(evento_11);
+cartelera.push(evento_4);
 // Renderizado de los shows a mostrar en cartelera
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
