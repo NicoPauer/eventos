@@ -55,7 +55,7 @@ const evento_1 = new Show();
 evento_1.nombre = "cumpleaños de la artista Carolina Macellaro, ig:@soyelefantevioleta"
 evento_1.protagonista = "Carolina Macellaro con nombre artístico 'Elefante Violeta'"
 evento_1.lugar = "donde quiera";
-evento_1.rubro = "cumpleaños";
+evento_1.rubro = "charlas";
 // fecha: 27 de enero de 2024
 evento_1.fecha = new Date(2024, 0, 27);
 // Defino representacion de cartelera
@@ -70,7 +70,7 @@ const evento_2 = new Show();
 evento_2.nombre = "Cumpleaños de mi abuela, Alicia Guillén";
 evento_2.protagonista = "Mi abuela";
 evento_2.lugar = "Monte Hermoso";
-evento_2.rubro = "cumpleaños";
+evento_2.rubro = "chsrlas";
 evento_2.fecha = new Date(2024, 0, 28);
 cartelera.push(evento_2);
 // evento_3
@@ -78,7 +78,7 @@ const evento_3 = new Show();
 evento_3.nombre = "Mi cumpleaños, Nico Paier";
 evento_3.protagonista = "yo";
 evento_3.lugar = "A definir";
-evento_3.rubro = "cumpleaños";
+evento_3.rubro = "charlas";
 evento_3.fecha = new Date(2024, 9, 27);
 cartelera.push(evento_3);
 // evento_4
