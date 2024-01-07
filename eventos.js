@@ -70,12 +70,12 @@ const evento_2 = new Show();
 evento_2.nombre = "Cumpleaños de mi abuela, Alicia Guillén";
 evento_2.protagonista = "Mi abuela";
 evento_2.lugar = "Monte Hermoso";
-evento_2.rubro = "chsrlas";
+evento_2.rubro = "charlas";
 evento_2.fecha = new Date(2024, 0, 28);
 cartelera.push(evento_2);
 // evento_3
 const evento_3 = new Show();
-evento_3.nombre = "Mi cumpleaños, Nico Paier";
+evento_3.nombre = "Mi cumpleaños, Nico Pauer";
 evento_3.protagonista = "yo";
 evento_3.lugar = "A definir";
 evento_3.rubro = "charlas";
