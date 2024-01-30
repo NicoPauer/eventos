@@ -57,7 +57,7 @@ let cartelera = [];
 
 // Otros eventos
 // evento_2, uso notación JSON para optimizar 
-cartelera.push({nombre : 'laje en LN+', lugar : 'TV', rubro : 'television', fecha : (new Date(2024, 01, 05))});
+cartelera.push({nombre : 'laje en LN+', lugar : 'TV', rubro : 'television', fecha : (new Date(2024, 01, 05)), protagonista : 'Antonio Laje'});
 // evento_3
 const evento_3 = new Show();
 evento_3.nombre = "Mi cumpleaños, Nico Pauer";
