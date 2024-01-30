@@ -51,28 +51,13 @@ class Show
 // Instancio la clase con objetos para usar
 const evento_1 = new Show();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
-// evento_1
-evento_1.nombre = "cumpleaños de la artista Carolina Macellaro, ig:@soyelefantevioleta"
-evento_1.protagonista = "Carolina Macellaro con nombre artístico 'Elefante Violeta'"
-evento_1.lugar = "donde quiera";
-evento_1.rubro = "charlas";
-// fecha: 27 de enero de 2024
-evento_1.fecha = new Date(2024, 0, 27);
 // Defino representacion de cartelera
 let cartelera = [];
-// Agrego a cartelera
-cartelera.push(evento_1)
 // Hago otras instancias de las clases para tener mejor encapsulamiento y no sobreescribir información
 
 // Otros eventos
-// evento_2
-const evento_2 = new Show();
-evento_2.nombre = "Cumpleaños de mi abuela, Alicia Guillén";
-evento_2.protagonista = "Mi abuela";
-evento_2.lugar = "Monte Hermoso";
-evento_2.rubro = "charlas";
-evento_2.fecha = new Date(2024, 0, 28);
-cartelera.push(evento_2);
+// evento_2, uso notación JSON para optimizar 
+cartelera.push({nombre : 'laje en LN+', lugar : 'TV', rubro : 'television', fecha : (new Date(2024, 01, 05))});
 // evento_3
 const evento_3 = new Show();
 evento_3.nombre = "Mi cumpleaños, Nico Pauer";
