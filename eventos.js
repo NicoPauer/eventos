@@ -60,15 +60,15 @@ costo de actualización y monetizarlo que hacer una web ineficiente para el usua
   [Mejor una molestia eventual que uno constante]
 */
 let cartelera = [
-                  {nombre : 'laje en LN+', lugar : 'TV', rubro : 'television', fecha : (new Date(2024, 01, 05)), protagonista : 'Antonio Laje'},
-                  {nombre : 'Cumple de Nico Pauer', lugar : 'Casa de Nico Pauer', rubro : 'charlas', fecha : (new Date(2024, 09, 27)), protagonista : 'Nico Pauer'},
+                  {nombre : 'laje en LN+', lugar : 'TV', rubro : 'television', fecha : (new Date(2024, 02, 05)), protagonista : 'Antonio Laje'},
+                  {nombre : 'Cumple de Nico Pauer', lugar : 'Casa de Nico Pauer', rubro : 'charlas', fecha : (new Date(2024, 10, 27)), protagonista : 'Nico Pauer'},
                   {nombre : 'Aniversario de la fundación de Bahía Blanca', lugar : 'Bahía Blanca', rubro : 'charlas', fecha : (new Date(2024, 04, 11)), protagonista : 'Bahía Blanca'}
                 ];
 // Renderizado de los shows a mostrar en cartelera
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
 // Diccionario con los meses de formato javascript a gregoriano
-const meses = {0:'Ene', 1:'Feb', 2:'Mar', 3:'Abr', 4:'May', 5:'Jun', 6:'Jul', 7:'Ago', 8:'Sep', 9:'Oct', 10:'Nov', 11:'Dic'};
+const meses = {1:'Ene', 2:'Feb', 3:'Mar', 4:'Abr', 5:'May', 6:'Jun', 7:'Jul', 8:'Ago', 9:'Sep', 10:'Oct', 11:'Nov', 12:'Dic'};
 /* tiene que ser fuera del bucle y variable para evitar dupplicados */
 let cartel;
 
@@ -79,5 +79,5 @@ for (let c in cartelera)
   // Selecciono sección que corresponde al rubro del cartel
   const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
-  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + ", " + cartel.protagonista + " el " + meses[cartel.fecha.getMonth()] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
+  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + ", " + cartel.protagonista + " el " + meses[(cartel.fecha.getMonth() + 1)] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
