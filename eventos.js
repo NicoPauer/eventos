@@ -51,35 +51,19 @@ class Show
 // Instancio la clase con objetos para usar
 const evento_1 = new Show();
 // Con una instancia de la clase show iré agregando y cambiando shows a la grilla
-// Defino representacion de cartelera
-let cartelera = [];
-// Hago otras instancias de las clases para tener mejor encapsulamiento y no sobreescribir información
+/* Defino representacion de cartelera.
 
-// Otros eventos
-// evento_2, uso notación JSON para optimizar 
-cartelera.push({nombre : 'laje en LN+', lugar : 'TV', rubro : 'television', fecha : (new Date(2024, 01, 05)), protagonista : 'Antonio Laje'});
-// evento_3
-const evento_3 = new Show();
-evento_3.nombre = "Mi cumpleaños, Nico Pauer";
-evento_3.protagonista = "yo";
-evento_3.lugar = "A definir";
-evento_3.rubro = "charlas";
-evento_3.fecha = new Date(2024, 9, 27);
-cartelera.push(evento_3);
-// evento_4
-const evento_4 = new Show();
+uso lista de objetos JSON ya inicializados para reducir llamdas al metodo push y
+uso de constantes que consumen RAM y CPU, es preferible tener un pequeño
+costo de actualización y monetizarlo que hacer una web ineficiente para el usuario.
 
-evento_4.nombre = "Supuestamente fin de bailando 2023";
-
-evento_4.lugar = "America TV";
-
-evento_4.fecha = new Date(2024, 0, 29);
-
-evento_4.rubro = "television";
-
-evento_4.protagonista = "Tinelli, finalistas, jurado publico";
-
-cartelera.push(evento_4);
+  [Mejor una molestia eventual que uno constante]
+*/
+let cartelera = [
+                  {nombre : 'laje en LN+', lugar : 'TV', rubro : 'television', fecha : (new Date(2024, 01, 05)), protagonista : 'Antonio Laje'},
+                  {nombre : 'Cumple de Nico Pauer', lugar : 'Casa de Nico Pauer', rubro : 'charlas', fecha : (new Date(2024, 09, 27)), protagonista : 'Nico Pauer'},
+                  {nombre : 'Aniversario de la fundación de Bahía Blanca', lugar : 'Bahía Blanca', rubro : 'charlas', fecha : (new Date(2024, 04, 11)), protagonista : 'Bahía Blanca'}
+                ];
 // Renderizado de los shows a mostrar en cartelera
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
