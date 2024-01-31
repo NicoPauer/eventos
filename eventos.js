@@ -68,7 +68,7 @@ let cartelera = [
 // Selecciono elementos de la interfaz
 const grilla = document.querySelector("#eventos-listado");
 // Diccionario con los meses de formato javascript a gregoriano
-const meses = {1:'Ene', 2:'Feb', 3:'Mar', 4:'Abr', 5:'May', 6:'Jun', 7:'Jul', 8:'Ago', 9:'Sep', 10:'Oct', 11:'Nov', 12:'Dic'};
+const meses = {1:'Enero', 2:'Febrero', 3:'Marzo', 4:'Abril', 5:'Mayo', 6:'Junio', 7:'Julio', 8:'Agosto', 9:'Septiembre', 10:'Octubre', 11:'Noviembre', 12:'Diciembre'};
 /* tiene que ser fuera del bucle y variable para evitar dupplicados */
 let cartel;
 
@@ -79,5 +79,5 @@ for (let c in cartelera)
   // Selecciono sección que corresponde al rubro del cartel
   const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
-  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + ", " + cartel.protagonista + " el " + meses[(cartel.fecha.getMonth() + 1)] + ", " + cartel.fecha.getDate() + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
+  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + ", " + cartel.protagonista + " el " + cartel.fecha.getDate() + " de " + meses[cartel.fecha.getMonth()] + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
