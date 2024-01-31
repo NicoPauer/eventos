@@ -79,5 +79,5 @@ for (let c in cartelera)
   // Selecciono sección que corresponde al rubro del cartel
   const seccion = document.querySelector("#" + cartel.rubro);
  // Muestro cada uno de los eventos 
-  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + ", " + cartel.protagonista + " el " + cartel.fecha.getDate() + " de " + meses[cartel.fecha.getMonth()] + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
+  seccion.innerHTML = seccion.innerHTML + '<p class = "evento">' + (cartel.nombre + ", " + cartel.protagonista + " el " + cartel.fecha.getDate() + " de " + meses[(cartel.fecha.getMonth() - 1)] + " del " + cartel.fecha.getFullYear() + " en " + cartel.lugar + ".</p>");
 }
